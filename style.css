@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_links{
+  width: 100vh;
+}
+/*main background*/
+body{
+  font-family:'Arial', sans-serif !important;
+  background-color: whitesmoke;  
+}
+body h2,h3,h4,h5,h6{
+  color:rgb(0, 145, 255);
+}
+body p{
+  line-height: 1.5em; 
+  text-align: justify;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  left: 0;
+  background-color:rgb(0, 128, 255);
+  display: flex;
+  justify-content: space-between !important;
+  height: 50px;  
+}
+.nav_links ul{
+  display: flex;
+  float: right;
+  
+  
+}
+.nav_links ul li{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  list-style: none;
+  
+}
+.links a{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  margin-right: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.nav_links{
+  position: relative;
+  background-color: rgb(196, 201, 205);
+  margin-top: 8px;
+  width: max-content;
+  margin-right: 3px;
+  z-index: -5px;
+  z-index: 999;
+}
+.nav_links li:hover a{
+  background-color: rgba(58, 113, 121, 0.21);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 1rem;
+    
+}
+
+.logo h2{
+  position:fixed;
+  margin-left: 5px;
+  margin-top: 15px;
+  color:white
+}
+
+.bv{
+  height: 25px;
+  width: 2px;
+  background-color:rgb(0, 128, 255);
+}
+
+
+.submain .lienpage{
+  position: fixed;
+  margin-top: 50.7px;
+  margin-left: 0;
+  background-color:rgb(0, 128, 255);
+  width:auto;
+  z-index: -5px;
+  z-index: 999;
+
+}
+.lienpage a{
+  color:white;
+  font-size: large;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*page de la gauche*/
+.principale .submain .left{
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 8%;
+  border-style: hidden;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  
+}
+
+.cadre1{
+  height: 120px;
+  width: 100%;
+  max-width: 250px;;
+  float: left;
+  
+  margin-right:  8px;
+  border-radius: 1rem;
+}
+.cadre1 img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*page de la droite*/
+.principale .submain .right{
+  position: absolute;
+  background-color: white;
+  width: 21%;
+  margin-left: 70%;
+  margin-top: 8%;
+  word-wrap:break-word;
+
+}
+
+.langue a img{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.frensh {
+  width: 35px !important;
+}
+.english{
+  width: 37px !important;
+}
+.cadre2{
+  height: 70px;
+  max-width: 70px;
+  width: 100%;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.cadre2 img{
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin:0 auto;
+}
+.images-container p{
+  text-align: justify;
+}
+a{
+  text-decoration: none;
+}
+
+.right h4{
+  color: rgb(0, 145, 255);  
+}
+
+.navbar .menuHamburger{
+  display: none;
+}
+
+/* *****************++++++++++page membre+++++++++**************/
+@media all and (max-width: 1090px){
+  .navbar{
+    background-color: rgb(0, 128, 255);
+    width: 100%;
+  }
+  .logo h2{
+    color: white;
+    font-size: xx-large;
+    margin-top: 8px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .navbar .menuHamburger{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 2% ;
+  }
+  .nav_links{
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-left: -100%;
+    margin-top: 9%; 
+  }
+  .mobile_menu{
+    margin-top: 55px;
+    margin-left: 35%;
+  }
+  .nav_links ul {
+    display: flex;
+  }
+  .nav_links ul li{
+    margin-right: -18px;
+    margin-left: 5px;
+    padding: 0;
+  }
+  .nav_links ul li a{
+    font-size: large;
+  }  
+  .principale .submain .left{
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    margin-left: 1.5%;
+    margin-top: 20%;
+    border-style: hidden;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-size: 16px;
+  }
+  .principale .submain .right{
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    margin-left: 65%;
+    margin-top: 20%;
+    word-wrap:break-word;
+    font-size: 16px;
+  
+  }
+  .cadre1{
+    height: 120px;
+    width: 100%;
+    max-width: 160px;;
+    float: left;
+    margin-left: 5px;
+    margin-right:  10px;
+    border-radius: 1rem;
+  }
+  .images-container {
+    margin-bottom: 2px;
+  }
+}
+
+/*****************************************************************/
+@media all and (max-width: 430px){
+  .navbar{
+    background-color: rgb(0, 128, 255);
+    width: 100%;
+  }
+  .logo h2{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .navbar .menuHamburger{
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 20%;
+    margin-left: 2% ;
+  }
+  .nav_links{
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-left: -100%;
+    margin-top: 9%; 
+  }
+  .mobile_menu{
+    margin-top: 13%;
+    margin-left: 25%;
+  }
+  .nav_links ul {
+    display: flex;
+  }
+  .nav_links ul li{
+    margin-right: -18px;
+    margin-left: 5px;
+    padding: 0;
+  }
+  .nav_links ul li a{
+    font-size: x-small;
+  }
+  
+  .principale .submain .left{
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 30%;
+    border-style: hidden;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-size: 10px;
+  }
+  .principale .submain .right{
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    margin-left: 58%;
+    margin-top: 30%;
+    word-wrap:break-word;
+    font-size: 10px;
+  
+  }
+  .cadre1{
+    height: 100px;
+    width: 90%;
+    max-width: 90px;;
+    float: left;
+    margin-right:5px;
+    border-radius: 1.5rem;
+  }
+  
+  .bv{
+    height: 20px;
+    width: 2px;
+    background-color:rgb(0, 128, 255);
+  }
+  
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+

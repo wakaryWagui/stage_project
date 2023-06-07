@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav_links{
+  width: 100vh;
+}
+/*main background*/
+body{
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color:whitesmoke;
+  
+}
+.menuMobile{
+  display: none;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  left: 0;
+  background-color:rgb(0, 128, 255);
+  display: flex;
+  justify-content: space-between;
+  z-index: -5px;
+  height: 50px;
+  
+}
+.nav_links ul{
+  display: flex;
+  float: right;
+  
+}
+.nav_links ul li{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  list-style: none;
+}
+.nav_links ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  margin-right: 30px;
+  transition: all 0.5s ease-in;
+}
+.nav_links li a:hover{
+  background-color: rgba(58, 113, 121, 0.21);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 1rem;
+    
+}
+.nav_links{
+  background-color: rgb(196, 201, 205);
+  margin-top: 8px;
+  width: max-content;
+  margin-right: 3px;
+  z-index: -5px;
+  z-index: 999;
+  
+}
+.navbar .menuHamburger{
+  display: none;
+}
+.mobile_menu{
+  margin-left: 0;
+}
+
+.logo h2{
+  position:fixed;
+  margin-left: 5px;
+  margin-top: 15px;
+  color:white
+  
+}
+
+.bv{
+  height: 30px;
+  width: 3px;
+  background-color:rgb(0, 128, 255);
+}
+.principale{
+  position: absolute;
+  margin-top: 10%;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.block1{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  text-align: center;
+  margin-left: 10%;
+  
+}
+.openData{
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: -50px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 16px;
+}
+.openSource{
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+
+}
+.openData span{
+  position: absolute;
+  color:rgb(0, 128, 255) ;
+  width: max-content;
+  padding:2px 10px;
+  border-radius: 1em;
+  margin-left: -60px;
+}
+
+.openSource span{
+  position: absolute;
+  color:rgb(0, 128, 255) ;
+  width: max-content;
+  padding:2px 10px;
+  border-radius: 1em;
+  margin-left: -95px;
+}
+.fem{
+  position: relative;
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.fem img{
+  width: 150px;
+}
+.fem a{
+  text-decoration: none;
+}
+.lienpage{
+  position: fixed;
+  margin-top: 50.7px;
+  margin-left: 0;
+  background-color:rgb(0, 128, 255);
+  width:auto;
+  z-index: -5px;
+  z-index: 999;
+
+}
+.lienpage a{
+  color:white;
+  font-size: large;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.detail{
+  background-color: rgb(0, 128, 255);
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.mexCulture{
+  background-color: rgb(0, 128, 255);
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.graspinginthewild{
+  background-color:rgb(0, 128, 255);
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.labriH264{
+  background-color: rgb(0, 128, 255);
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+  margin-top: -5;
+  margin-bottom: 5%;
+}
+.cadreDetail img{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+}
+.detail:hover{
+  transform: scale(0.990);
+  transition: 0.5s ease-in-out;
+}
+.cadreMex img{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+}
+.mexCulture:hover{
+  transform: scale(0.990);
+  transition: 0.5s ease-in-out;
+}
+.cadreGras img{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+}
+.graspinginthewild:hover{
+  transform: scale(0.990);
+  transition: 0.5s ease-in-out;
+}
+.cadreLabri img{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #0c0c0c;
+}
+.labriH264:hover{
+  transform: scale(0.990);
+  transition: 0.5s ease-in-out;
+}
+.detail strong{
+  color: white;
+}
+.mexCulture strong{
+  color: white;
+}
+.graspinginthewild strong{
+  color: white;
+
+}
+.labriH264 strong{
+  
+  color: white;
+  
+
+}
+
+@media all and (max-width: 1090px){
+  .navbar{
+    background-color: rgb(0, 128, 255);
+    width: 100%;
+  }
+  .logo h2{
+    color: white;
+    font-size: xx-large;
+    margin-top: 8px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .navbar .menuHamburger{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 2% ;
+  }
+  .nav_links{
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-left: -100%;
+    margin-top: 9%; 
+  }
+  .mobile_menu{
+    margin-top: 55px;
+    margin-left: 35%;
+  }
+  .nav_links ul {
+    display: flex;
+  }
+  .nav_links ul li{
+    margin-right: -18px;
+    margin-left: 5px;
+    padding: 0;
+  }
+  .nav_links ul li a{
+    font-size: large;
+  }
+  .lienpage{
+    display: none;
+  }
+  
+  
+  .block1{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    
+  }
+  .detail{
+    background-color: rgb(0, 128, 255);
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px #0c0c0c;
+    margin-top: 10%;
+    margin-left: -30px;
+  }
+  .mexCulture{
+    background-color: rgb(0, 128, 255);
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #0c0c0c;
+    margin-top: 10%;
+    margin-left: -30px;
+  }
+  .graspinginthewild{
+    background-color:rgb(0, 128, 255);
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #0c0c0c;
+    margin-top: 10%;
+    margin-left: -30px;
+  }
+  .labriH264{
+    background-color: rgb(0, 128, 255);
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #0c0c0c;
+    margin-top: 10%;
+    margin-left: -30px;
+  }
+  .openData{
+    position: relative;
+    background-color: whitesmoke;
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+  }
+  .openData span{
+    position: absolute;
+    color:rgb(0, 128, 255) ;
+    width: max-content;
+    padding:2px 10px;
+    border-radius: 1em;
+    margin-left: -80px;
+  }
+
+  .openSource{
+    position: relative;
+    background-color: white;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+  
+  }
+  #open{
+    position: absolute;
+    color: white;
+    width: max-content;
+    padding:2px 10px;
+    border-radius: 1em;
+    margin-left: -58px;
+  }
+  .fem{
+    position: relative;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .fem img{
+    width: 90px;
+  }
+}
+  /**********************************************************/
+  @media all and (max-width: 430px){
+    .navbar{
+      background-color: rgb(0, 128, 255);
+      width: 100%;
+    }
+    .logo h2{
+      color: white;
+      font-size: 20px;
+      margin-top: 15px;
+      margin-left: 30px;
+      text-align: center;
+    }
+    .navbar .menuHamburger{
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      margin-top: 20%;
+      margin-left: 2% ;
+    }
+    .nav_links{
+      position: absolute;
+      background-color: white;
+      width: auto;
+      height: auto;
+      margin-left: -100%;
+      margin-top: 9%; 
+    }
+    .mobile_menu{
+      margin-top: 13%;
+      margin-left: 25%;
+    }
+    .nav_links ul {
+      display: flex;
+    }
+    .nav_links ul li{
+      margin-right: -18px;
+      margin-left: 5px;
+      padding: 0;
+    }
+    .nav_links ul li a{
+      font-size: x-small;
+    }
+        
+    .block1{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      
+    }
+    
+    
+    .detail{
+      background-color:  rgb(0, 128, 255);
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      box-shadow: 1px 1px 3px #0c0c0c;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .mexCulture{
+      background-color: rgb(0, 128, 255);
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px #0c0c0c;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .graspinginthewild{
+      background-color:  rgb(0, 128, 255);
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px #0c0c0c;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .labriH264{
+      background-color:  rgb(0, 128, 255);
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px #0c0c0c;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .cadreDetail img{
+      width: 200px;
+      height: 250px;
+    }
+    .bv{
+      height: 20px;
+      width: 2px;
+      background-color:rgb(0, 128, 255);
+    }
+    .openData{
+      position: relative;
+      background-color: whitesmoke;
+      margin-top: 15%;
+      width: 100%;
+      text-align: center;
+    }
+    .openSource{
+      position: relative;
+      background-color: white;
+      margin-top: 10%;
+      width: 100%;
+      text-align: center;
+    
+    }
+    #open{
+      position: absolute;
+      color: white;
+      width: max-content;
+      padding:2px 10px;
+      border-radius: 1em;
+      margin-left: -58px;
+    }
+    .fem{
+      position: relative;
+      background-color: whitesmoke;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+    .fem img{
+      width: 90px;
+    }
+    .lienpage a{
+      display: none;
+    }
+    body h2,h3,h4,h5,h6{
+      font-size: small;
+    }
+  }
+
+
+
